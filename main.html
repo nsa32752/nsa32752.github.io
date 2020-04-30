@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- metadata -->
+		<meta charset="utf-8" />
+		<meta name="author" content="SeoYeon Park" />
+        <meta name="description" content="portfolio" />
+        <link rel="stylesheet" href="./portfolio.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js" type="text/javascript"></script>
+        <script type="text/javascript" src="./portfolio.js"></script>
+		<title>portfolio</title>
+	</head>
+
+	<body>
+        <nav>
+            <ul class="menu">
+                <li onmouseover="menuc1.style.color='white'" onmouseout="menuc1.style.color='black'"><a href="#title_AM" id="menuc1">ABOUT ME</a></li>
+                <li onmouseover="menuc3.style.color='white'" onmouseout="menuc3.style.color='black'"><a href="#title_AC" id="menuc3">ACTIVITIES</a></li>
+                <li onmouseover="menuc4.style.color='white'" onmouseout="menuc4.style.color='black'"><a href="#title_SK" id="menuc4">SKILLS</a></li>
+                <li onmouseover="menuc5.style.color='white'" onmouseout="menuc5.style.color='black'"><a href="#title_CT" id="menuc5">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <br/><br/><br/><br/><br/>
+
+        <div class="intro">
+            <h1 id="title"></h1>
+            <br/>
+            <h1><a id="direction" href="#title_AM"></a></h1>
+        </div>
+        
+        
+        <h2 class="title_B" id="title_AM" >ABOUT ME</h2>
+        <br>
+        <br>
+        <div id="AboutMe">
+            <p id="am_content">
+                SeoYeon Park<br>
+                1999.11.03<br>
+                Hanyang Univ. ERICA<br>
+                Computer Science, Software
+            </p>
+        </div>
+
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <h2 class="title_P" id="title_AC" >ACTIVITIES</h2>
+        <div id="Activities">
+            <p id="details">If you click, you can see the details.</p>
+            <h3 class="ac_title">2018</h3>
+            <div class="ac_content">
+                <div class="list" onclick="seemore(0)">Student Coucil<br> Devision of <br>Computer Science</div>
+                <div class="more" >
+                    Designer/PR Team<br>
+                    Facebook page administration<br>
+                    production list<br>
+                    &nbsp;- Poster<br>
+                    <br>
+                    <div class="close" onclick="remove(0)">close</div>
+                </div>
+                <div class="list" onclick="seemore(1)">Python <br>Tutoring<br> tutor </div>
+                <div class="more">
+                    2018.11~2018.12<br>
+                    Teaching students who major in software for emerging technology
+                    <br><br>
+                    <div class="close" onclick="remove(1)">close</div>
+                </div>
+            </div>
+        
+            <h3 class="ac_title">2019</h3>
+            <div class="ac_content">       
+                <div class="list" onclick="seemore(2)">Korea<br> Railroad Research Institute</div>
+                <div class="more">
+                    2019.07.18~2019.08.31<br>
+                    Self-driving Control Research Team, SW Developer<br>
+                    - Building a SW Reliability Assessment Tool<br>
+                    &nbsp;&nbsp;: Using PyQt5, matplotlib, csv<br>
+                    - Backend) Yongin Everline real-time Train information<br>
+                    &nbsp;&nbsp;: Using Python-OpenCV<br>
+                    <br>
+                    <div class="close" onclick="remove(2)">close</div>
+                </div>
+                <div class="list" onclick="seemore(3)">Python <br>Tutoring<br> tutor </div>
+                <div class="more">
+                    2019.04~2019.06<br>
+                    Teaching students who major in software for emerging technology<br>
+                    <br>
+                    2019.07~2019.08<br>
+                    Top-Coding Edu.<br>
+                    &nbsp;Teaching elementary/middle school students<br>
+                    &nbsp;&nbsp;- prerparing COS pro (professional coding specialist) python<br>
+                    <br>
+                    <div class="close" onclick="remove(3)">close</div>
+                </div>
+                <div class="list" onclick="seemore(4)">C Language Basic<br> Mentoring <br>mentor</div>
+                <div class="more" >
+                    2019.03~2019.11
+                    <br><br>
+                    <div class="close" onclick="remove(4)">close</div>
+                </div>
+                <div class="list" onclick="seemore(5)">Student Coucil<br> Devision of<br> Computer Science</div>
+                <div class="more">
+                    2019.01~2019.12<br>
+                    Designer<br>
+                    production list<br>
+                    &nbsp;- Poster<br>
+                    &nbsp;- Group uniform<br>
+                    &nbsp;- Logo<br>
+                    &nbsp;- Calendar<br>
+                    &nbsp;- Presentation material<br>
+                    <br>
+                    <div class="close" onclick="remove(5)">close</div>
+                </div>
+                <div class="list" onclick="seemore(6)">2019 HESH<br> Staff<br>& Designer</div>
+                <div class="more">
+                    2019.10~2019.11.10<br>
+                    production list<br>
+                    &nbsp;- Poster<br>
+                    &nbsp;- goods<br>
+                    &nbsp;- group uniform<br>
+                    &nbsp;- facebook card news<br>
+                    <br>
+                    <div class="close" onclick="remove(6)">close</div>
+                </div>
+                <div class="list" onclick="seemore(7)">Hanyang Univ. DCS<br> Algorithm Society<br> Accounting Manager</div>
+                <div class="more">
+                    2018.12~2019.12<br>
+                    Drawing up a budget and a settlement<br>
+                    Managing money<br>
+                    <div class="close" onclick="remove(7)">close</div>
+                </div>
+            </div>
+            
+            <h3 class="ac_title">2020</h3>
+            <div class="ac_content">   
+                <div class="list" onclick="seemore(8)">2020 Samsung<br> DreamClass<br> Winter Camp</div>
+                <div class="more">
+                    2020.01.03~2020.01.22<br>
+                    Camp Opertaions TEAM, Personnel/Support PART<br>
+                    College Student Mentor<br>
+                    &nbsp;- Developing Program to Extract student name who has food allergy.
+                    <blockquote> 
+                        Python library, openpyxl, detecting food and student names that can’t be eaten because of allergies.
+                        There are two types of excel files: the food number in the weekly meal schedule and the student list which includes the food number that the student shouldn’t eat.
+                        Matching two files, write the student names and the menu student shouldn’t eat on excel file.
+                    </blockquote>
+                    &nbsp;- Student Counseling Application Management<br>
+                    &nbsp;- Management of personnel information of camp participants<br>
+                    <br>
+                    <div class="close" onclick="remove(8)">close</div>
+                </div>
+            </div>
+        </div>
+
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <h2 class="title_B" id="title_SK" >SKILLS</h2>
+        <div id="Skills">
+            <p class="sk languange">
+                Languange
+            </p>
+            <div class="content">
+                <p>C</p>
+                <div class="box">
+                    <div class="skill C">75%</div>
+                </div>
+                <p>Python</p>
+                <div class="box">
+                    <div class="skill Py">100%</div>
+                </div>
+                <p>JAVA</p>
+                <div class="box">
+                    <div class="skill Java">50%</div>
+                </div>
+                <p>html/css</p>
+                <div class="box">
+                    <div class="skill hc">75%</div>
+                </div>
+            </div>
+
+            <p class="sk micro">
+                Microsoft
+            </p>
+            <div class="content">
+                <p>Powerpoint</p>
+                <div class="box">
+                    <div class="skill ppt">100%</div>
+                </div>
+                <p>Excel</p>
+                <div class="box">
+                    <div class="skill excel">90%</div>
+                </div>
+                <p>Word</p>
+                <div class="box">
+                    <div class="skill word">100%</div>
+                </div>
+            </div>
+        </div>
+
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+        <h2 class="title_P" id="title_CT" >CONTACT</h2>
+        <p id="ct_content">
+            Email  nsa32752@naver.com<br/>
+            github <a href="http://www.github.com/nsa32752">www.github.com/nsa32752</a>
+        </p>
+
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+
+		<!-- <address>
+			Github _ <a href="github.com/nsa32752">SeoYeon Park</a>.
+        </address> -->
+        <script type="text/javascript" src="./portfolio.js"></script>
+	</body>
+</html>

@@ -17,22 +17,22 @@ function typing(){
 function seemore(i){
     var list = document.getElementsByClassName("more");
     var list2 = document.getElementsByClassName("list");
-    var x = list2[i].positionedOffset().left;
-    var y = list2[i].positionedOffset().top;
-    console.log(x, y);
+    // var x = list2[i].positionedOffset().left;
+    // var y = list2[i].positionedOffset().top;
+    // console.log(x, y);
     for(var j=0; j<list.length; j++){
         if(list[j].style.display != 'none'){
             list[j].style.display = 'none';
         }
     }
     list[i].style.display='inline'
-    if(window.innerWidth<x+570){
-        list[i].style.left = (window.innerWidth-700)+'px';
-    }
-    else{
-        list[i].style.left = x+'px';
-    }
-    list[i].style.top = y+'px';
+    // if(window.innerWidth<x+570){
+    //     list[i].style.left = (window.innerWidth-700)+'px';
+    // }
+    // else{
+    //     list[i].style.left = x+'px';
+    // }
+    // list[i].style.top = y+'px';
 }
 
 function remove(i){

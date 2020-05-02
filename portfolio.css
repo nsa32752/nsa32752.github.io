@@ -165,6 +165,12 @@ nav ul li:hover{
     border-radius: 10pt;
 }
 
+.more a{
+
+    color: white;
+    text-align: center;
+}
+
 .close{
     border: 2px solid white;
     text-align: center;
@@ -219,7 +225,7 @@ nav ul li:hover{
 
 .C{width: 75%;}
 .Py{width: 98%;}
-.Java{width: 75%;}
+.Java{width: 50%;}
 .hc{width: 75%;}
 .ppt{width: 98%;}
 .excel{width: 90%;}
